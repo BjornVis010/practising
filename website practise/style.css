@@ -1,0 +1,112 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+.grid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 20% 15% 45% 20%;
+    grid-template-columns: (4 auto);
+    grid-template-areas:
+    'nav nav nav nav'
+    'header header header header'
+    'sec1 sec2 sec3 sec4'
+    'footer footer footer footer';
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    width: 85vw;
+    padding: 4rem;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.secimg {
+    height: 25rem;
+    border-style: ridge;
+    border-radius: 4rem;
+    border-color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: rgba(222, 222, 222, 0);
+}
+
+a:hover {
+    color: darkorange;
+}
+
+header {
+    background-color: aquamarine;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.sec1 {
+    background-color: cornflowerblue;
+    grid-area: sec1;
+    display: flex;
+    justify-content: center;
+    border-style: ridge;
+    border-color: black;
+    align-items: center;
+    background-image: url(./img/Björn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec2 {
+    background-color: aqua;
+    grid-area: sec2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 {
+    background-color: cadetblue;
+    grid-area: sec3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4 {
+    background-color: cyan;
+    grid-area: sec4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: lightseagreen;
+    grid-area: footer;
+}
