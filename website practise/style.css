@@ -9,7 +9,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 20% 15% 45% 20%;
+    grid-template-rows: 15% 20% 50% 15%;
     grid-template-columns: (4 auto);
     grid-template-areas:
     'nav nav nav nav'
@@ -20,18 +20,25 @@ html, body {
 
 nav {
     grid-area: nav;
-    background-color: blue;
+    background-color: white;
     display: flex;
     align-items: center;
 }
 
-ul {
+.navul {
     width: 85vw;
     padding: 4rem;
     list-style: none;
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
+    color: blue;
+}
+
+.footerul {
+    list-style: none;
+    display: flex;
+    margin-right: 5rem;
 }
 
 .logo {
@@ -47,18 +54,19 @@ ul {
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 a:visited {
-    color: rgba(222, 222, 222, 0);
+    color: blue;
 }
 
 a:hover {
-    color: darkorange;
+    color: black;
 }
 
 header {
-    background-color: aquamarine;
+    background-color: blue;
+    color: white;
     grid-area: header;
     display: flex;
     align-items: center;
@@ -66,7 +74,7 @@ header {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .sec1 {
@@ -80,6 +88,7 @@ h1 {
     background-image: url(./img/Björn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .sec2 {
@@ -88,6 +97,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: ridge;
+    border-color: black;
+    background-image: url(./img/depositphotos_102096488-stock-illustration-bv-letters-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sec3 {
@@ -96,17 +111,51 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: ridge;
+    border-color: black;
+    background-image: url(./img/JavaScript-logo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sec4 {
-    background-color: cyan;
+    background-color: whitesmoke;
     grid-area: sec4;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: ridge;
+    border-color: black;
+    background-image: url(./img/hacker.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
-    background-color: lightseagreen;
+    width: 100%;
+    background-color: white;
     grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.footertext {
+    margin-left: 5rem;
+}
+
+.insta {
+    height: 10vh;
+    margin-right: 2rem;
+}
+
+.github {
+    height: 10vh;
+    margin-right: 2rem;
+}
+
+.linkedin {
+    height: 10vh;
 }
